@@ -47,6 +47,10 @@ Some notes and examples for cobalt strike's functionality.
   [Aggressor Script Tutorial](https://www.cobaltstrike.com/aggressor-script/index.html)
   
 ## Common Commands
+  - **help:** Listing of the available commands.
+  - **help \<module>:** Show the help menu of the selected module.
+  - **jobs:** List the running jobs of beacon.
+  - **jobkill \<id>:** Kill selected job.
   - **run:** Execute OS commands using Win32 API calls.  
   - **shell:** Execute OS commands by spawning "cmd.exe /c".
   - **powershell:** Execute commands by spawning "powershell.exe"
