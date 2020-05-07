@@ -16,8 +16,7 @@ Some notes and examples for cobalt strike's functionality.
   - [Pivoting](#pivoting)
   - [Lateral Movement](#lateral-movement)
   - [Exflitration](#exflitration)
-  - []()
-  - []()
+  - [Miscellaneous](#miscellaneous)
   
   
 ## Basic Menus Explanation
@@ -69,9 +68,7 @@ Some notes and examples for cobalt strike's functionality.
   
   
 ## Exploitation
-  - **argue:** Will mask/spoof the arguments of a malicious command of our choice with legitimate ones.
   - **browserpivot:** Will hijack a web session of internet explorer and make possible for us to browse the web as the victim's browser, including it's sessions, cookies and saved passwords.
-  - **blockdlls:** This module will create and set a custom policy on beacon's child processes that will block the injection of any 3rd party dll that is not signed by microsoft, that can block any blue team tool that uses dll injection to inspect and kill malicious processes and actions.
   
   ## Privilege Escalation
   
@@ -80,4 +77,8 @@ Some notes and examples for cobalt strike's functionality.
   ## Lateral Movement
   
   ## Exflitration
+  
+  ## Miscellaneous
+   - **argue:** Will mask/spoof the arguments of a malicious command of our choice with legitimate ones.
+   - **blockdlls:** This module will create and set a custom policy on beacon's child processes that will block the injection of any 3rd party dll that is not signed by microsoft, that can block any blue team tool that uses dll injection to inspect and kill malicious processes and actions.
   
