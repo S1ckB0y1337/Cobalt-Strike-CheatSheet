@@ -2,6 +2,8 @@
 
 Some notes and examples for cobalt strike's functionality.
 
+![Cobalt](https://github.com/buftas/Cobalt-Strike-Notes/blob/master/cobalt.png)
+
 ## Summary
 
 - [Cobalt Strike Notes](#cobalt-strike-notes)
