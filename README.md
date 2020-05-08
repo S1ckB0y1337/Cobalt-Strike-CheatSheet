@@ -39,7 +39,7 @@ Some notes and examples for cobalt strike's functionality.
   - **External C2:** This is a special type of listener that gives the option to 3rd party applications to act as a communication medium for beacon.
   
 ## Malleable C2 Profiles
-  In simple words a malleable c2 profile is a configuration file that defines how beacon will communicate and behave when executes    modules, spawns processes and threads, injects dlls or touched disk and memory. Not only that, but it configures how the payload's traffic will look like on a pcap, the communication interval and jitter etc. \
+  In simple words a malleable c2 profile is a configuration file that defines how beacon will communicate and behave when executes    modules, spawns processes and threads, injects dlls or touched disk and memory. Not only that, but it configures how the payload's traffic will look like on a pcap, the communication interval and jitter etc.
   
   The big advantage of custom malleable c2 profiles, is that we can configure and customize our payload to match our situation and target environment, that way we make our selves more stealthy as we can blend with the environment's traffic.
   
