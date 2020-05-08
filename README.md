@@ -68,17 +68,55 @@ Some notes and examples for cobalt strike's functionality.
   - **reg:** Query Regisrty.
   
   
-  
 ## Exploitation
   - **browserpivot:** Will hijack a web session of internet explorer and make possible for us to browse the web as the victim's browser, including it's sessions, cookies and saved passwords.
+  - **dcsync:** Perform the DCsync attack using mimikatz.
+  - **desktop:** Inject a VNC server on the beacon process and get a remote desktop view of the target.
+  - **dllinject/dllload:** Inject a reflective dll into a process/Load a dll on current process.
+  - **execute-assembly:** Loads and executes a .NET compiled assembly executable completely on memory.
+  - **inject:** Inject a beacon payload on a specified process and spawn a new beacon session under it's security context.
+  - **kerberos\*:** Manipulate kerberos tickets.
+  - **ppid:** Spoofs the parent process of beacon for any post-exploitation child spawning job. That way we can hide our malicious post-exploitation jobs.
+  - **psinject:** Inject on a specified process and execute a command using powerpick's functionality. \
+  :notebook: Powershell modules imported with **powershell-import** are available.
+  - **runu:** Run a command under a spoofed process PID.
+  - **shinject:** Inject shellcode into another a running process.
+  - **shspawn:** Create a new process and inject shellcode into it.
+  
   
   ## Privilege Escalation
+  - **elevate:** Contains a few ways to escalate your privileges using kernel exploits and UAC bypasses
+  - **getsystem:** Attempts to impersonate system.
+  - **getprivs:** Same as metasploit's function, enables the available privileges on the current token.
+  - **runasadmin:** Attempts to run a command on an elevated context using a local kernel or UAC bypass exploit.
+  
   
   ## Pivoting
   
+  
   ## Lateral Movement
+  - **portscan:** Performs a portscan on a spesific target.
+  - **runas:** A wrapper of runas.exe, using credentials you can run a command as another user.
+  - **pth:** By providing a username and a NTLM hash you can perform a Pass The Hash attack and inject a TGT on the current process. \
+  :exclamation: This module needs Administrator privileges.
+  - **make_token:** By providing credentials you can create an impersonation token into the current process and execute commands from the context of the impersonated user.
+  - **jump:** Provides easy and quick way to move lateraly using winrm or psexec to spawn a new beacon session on a target.
+  
+  :exclamation: The **jump** modules will use the current delegation/impersonation token for the authentication on the remote target.
+  
+  :muscle: We can combine the **jump** module with the **make_token** or **pth** module for a quick "jump" to another target on the network.
+  - **remote-exec:** Execute a command on a remote target using psexec, winrm or wmi.
+  
+  :exclamation: The **remote-exec** modules will use the current delegation/impersonation token for the authentication on the remote target.
+  
   
   ## Exflitration
+  - **hashdump:** Dump the local SAM hive's NTLM hashes.
+  - **keylogger:** Will capture keystrokes of a specified process and save them on a database.
+  - **screenshot:** Will capture the screen of a current process and save it on the database.
+  - **logonpassword:** Executes the well know **logonpasswords** function of mimikatz on the current machine.
+  - **mimikatz:** Includes and executes every module of mimikatz.
+  
   
   ## Miscellaneous
    - **argue:** Will mask/spoof the arguments of a malicious command of our choice with legitimate ones.
