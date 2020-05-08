@@ -1,4 +1,4 @@
-# Cobalt Strike Notes
+# Cobalt Strike CheatSheet
 
 Some notes and examples for cobalt strike's functionality.
 
