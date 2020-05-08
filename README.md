@@ -115,7 +115,7 @@ Some notes and examples for cobalt strike's functionality.
   - **keylogger:** Will capture keystrokes of a specified process and save them on a database.
   - **screenshot:** Will capture the screen of a current process and save it on the database.
   - **logonpassword:** Executes the well know **logonpasswords** function of mimikatz on the current machine.
-  - **mimikatz:** Includes and executes every module of mimikatz.
+  - **mimikatz:** You can execute any function of mimikatz.
   
   
   ## Miscellaneous
