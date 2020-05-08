@@ -8,7 +8,7 @@ Some notes and examples for cobalt strike's functionality.
 
 - [Cobalt Strike Notes](#cobalt-strike-notes)
   - [Summary](#summary)
-  - [Basic Menus Explanation](#basic-menus-explanation)
+  - [Basic Menu Explanation](#basic-menu-explanation)
   - [Listeners](#listeners)
   - [Malleable C2 Profiles](#malleable-c2-profiles)
   - [Aggressor Scripts](#aggressor-scripts)
@@ -21,7 +21,7 @@ Some notes and examples for cobalt strike's functionality.
   - [Miscellaneous](#miscellaneous)
   
   
-## Basic Menus Explanation
+## Basic Menu Explanation
 
 - **Cobalt Strike:** The first and most basic menu, it contains the functionality for connecting to a team server, set your preferences, change the view of beacon sessions, manage listeners and agressor scripts.
 - **View:** The view menu consists of elements that manages targets, logs, harvested credentials, screenshots, keystrokes etc. The main purpose of it is to provide an easy way to access the output of many modules, manage your loots and domain targets.
