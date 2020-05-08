@@ -92,6 +92,8 @@ Some notes and examples for cobalt strike's functionality.
   
   
   ## Pivoting
+  - **socks:** Start a socks4a proxy server and listen on a specified port.
+  - **covertvpn:** Deploy a VPN on the current system, will create a new interface and merge it into a specified IP. Using this we can use a local interface to access the internal target network.
   
   
   ## Lateral Movement
@@ -99,12 +101,13 @@ Some notes and examples for cobalt strike's functionality.
   - **runas:** A wrapper of runas.exe, using credentials you can run a command as another user.
   - **pth:** By providing a username and a NTLM hash you can perform a Pass The Hash attack and inject a TGT on the current process. \
   :exclamation: This module needs Administrator privileges.
+  - **steal_token:** Steal a token from a specified process.
   - **make_token:** By providing credentials you can create an impersonation token into the current process and execute commands from the context of the impersonated user.
   - **jump:** Provides easy and quick way to move lateraly using winrm or psexec to spawn a new beacon session on a target. \
-  :exclamation: The **jump** modules will use the current delegation/impersonation token for the authentication on the remote target. \
+  :exclamation: The **remote-exec** modules will use the current delegation/impersonation token to authenticate on the remote target. \
   :muscle: We can combine the **jump** module with the **make_token** or **pth** module for a quick "jump" to another target on the network.
   - **remote-exec:** Execute a command on a remote target using psexec, winrm or wmi. \
-  :exclamation: The **remote-exec** modules will use the current delegation/impersonation token for the authentication on the remote target.
+  :exclamation: The **remote-exec** modules will use the current delegation/impersonation token to authenticate on the remote target.
   
   
   ## Exflitration
@@ -116,6 +119,11 @@ Some notes and examples for cobalt strike's functionality.
   
   
   ## Miscellaneous
+   - **spawn:** Spawn a new beacon on the current machine, you can choose any type of listener you want.
+   - **spawnas:** Spawn a new beacon on the current system as another user by providing credentials.
+   - **spawnto:** Sets the executable that beacon will use to spawn and inject shellcode into it. You must specify a full path to the executable.
+   - **spawnu:** Attempt to spawn a session with a spoofer PID as its parent, the context of the process will match the identity of the specified PID.
    - **argue:** Will mask/spoof the arguments of a malicious command of our choice with legitimate ones.
    - **blockdlls:** This module will create and set a custom policy on beacon's child processes that will block the injection of any 3rd party dll that is not signed by microsoft, that can block any blue team tool that uses dll injection to inspect and kill malicious processes and actions.
+   - **timestomp:** Tamper the timestamp of a file, by applying another file's timestamp.
   
