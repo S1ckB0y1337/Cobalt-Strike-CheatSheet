@@ -108,6 +108,7 @@ Some notes and examples for cobalt strike's functionality.
   :muscle: We can combine the **jump** module with the **make_token** or **pth** module for a quick "jump" to another target on the network.
   - **remote-exec:** Execute a command on a remote target using psexec, winrm or wmi. \
   :exclamation: The **remote-exec** modules will use the current delegation/impersonation token to authenticate on the remote target.
+  - **ssh/ssh-key:** Authenticate using ssh with password or private key. Works for both linux and windows hosts.
   
   
   ## Exflitration
