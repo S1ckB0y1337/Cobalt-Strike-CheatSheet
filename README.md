@@ -104,10 +104,10 @@ Some notes and examples for cobalt strike's functionality.
   - **steal_token:** Steal a token from a specified process.
   - **make_token:** By providing credentials you can create an impersonation token into the current process and execute commands from the context of the impersonated user.
   - **jump:** Provides easy and quick way to move lateraly using winrm or psexec to spawn a new beacon session on a target. \
-  :exclamation: The **remote-exec** modules will use the current delegation/impersonation token to authenticate on the remote target. \
+  :exclamation: The **jump** module will use the current delegation/impersonation token to authenticate on the remote target. \
   :muscle: We can combine the **jump** module with the **make_token** or **pth** module for a quick "jump" to another target on the network.
   - **remote-exec:** Execute a command on a remote target using psexec, winrm or wmi. \
-  :exclamation: The **remote-exec** modules will use the current delegation/impersonation token to authenticate on the remote target.
+  :exclamation: The **remote-exec** module will use the current delegation/impersonation token to authenticate on the remote target.
   - **ssh/ssh-key:** Authenticate using ssh with password or private key. Works for both linux and windows hosts.
   
   
