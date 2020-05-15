@@ -122,7 +122,7 @@ Some notes and examples for cobalt strike's functionality.
   ## Miscellaneous
    - **spawn:** Spawn a new beacon on the current machine, you can choose any type of listener you want.
    - **spawnas:** Spawn a new beacon on the current machine as another user by providing credentials.
-   - **spawnto:** Sets the executable that beacon will use to spawn and inject shellcode into it. You must specify a full path to the executable.
+   - **spawnto:** Sets the executable that beacon will use to spawn and inject shellcode into it for it's post-exploitation functionality. You must specify a full path to the executable.
    - **spawnu:** Attempt to spawn a session with a spoofer PID as its parent, the context of the process will match the identity of the specified PID.
    - **argue:** Will mask/spoof the arguments of a malicious command of our choice with legitimate ones.
    - **blockdlls:** This module will create and set a custom policy on beacon's child processes that will block the injection of any 3rd party dll that is not signed by microsoft, that way we can block any blue team tool that uses dll injection to inspect and kill malicious processes and actions.
