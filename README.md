@@ -1,4 +1,4 @@
-# Cobalt-Strike-Notes
+# Cobalt-Strike-CheatSheet
 
 General notes and advices for cobalt strike C2 framework.
 
