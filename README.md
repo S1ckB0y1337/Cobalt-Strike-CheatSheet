@@ -1,10 +1,10 @@
-# Cobalt-Strike-CheatSheet
+# Cobalt Strike CheatSheet
 
 General notes and advices for cobalt strike C2 framework.
 
 ## Summary
 
-- [Cobalt Strike Notes](#cobalt-strike-notes)
+- [Cobalt Strike CheatSheet](#cobalt-strike-notes)
   - [Summary](#summary)
   - [Basic Menu Explanation](#basic-menu-explanation)
   - [Listeners](#listeners)
