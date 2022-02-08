@@ -51,7 +51,7 @@ General notes and advices for cobalt strike C2 framework.
   
 ## Aggressor Scripts
   Aggressor Script is the scripting language built into Cobalt Strike, version 3.0, and later. Aggresor Script allows you to modify and extend the Cobalt Strike client. These scripts can add additional functions on existing modules or create new ones. \
-  [Aggressor Script Tutorial](https://www.cobaltstrike.com/aggressor-script/index.html)
+  [Aggressor Script Tutorial](https://download.cobaltstrike.com/aggressor-script/index.html)
   
 ## Common Commands
   - **help:** Listing of the available commands.
